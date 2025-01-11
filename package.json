@@ -1,0 +1,23 @@
+{
+  "name": "cse341-project1",
+  "version": "1.0.0",
+  "description": "backend project for my byu class",
+  "homepage": "https://github.com/abimaelst/CSE341-Project1#readme",
+  "bugs": {
+    "url": "https://github.com/abimaelst/CSE341-Project1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abimaelst/CSE341-Project1.git"
+  },
+  "license": "ISC",
+  "author": "Abimael Tavares",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
