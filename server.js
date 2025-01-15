@@ -3,7 +3,7 @@ const routes = require('./routes')
 const mongoDb = require('./data/database')
 
 const app = express()
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 10000
 
 app.use('/', routes)
 
