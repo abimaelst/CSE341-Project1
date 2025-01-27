@@ -1,1 +1,37 @@
+###
+
 GET https://cse341-project1-14s8.onrender.com/api/v1/contacts
+
+###
+
+GET https://cse341-project1-14s8.onrender.com/api/v1/contacts/6797bd80cd63a9e86ea4567a
+
+###
+
+POST https://cse341-project1-14s8.onrender.com/api/v1/contacts
+content-type: application/json
+
+{
+"firstName":"abimael",
+"lastName":"tavares",
+"email":"mielna@tavares.dev.br",
+"favoriteColor":"red",
+"birthday":"24/01/1986"
+}
+
+###
+
+PUT https://cse341-project1-14s8.onrender.com/api/v1/contacts/6797b3844aca856d73bd6a5d
+content-type: application/json
+
+{
+"firstName":"abimael",
+"lastName":"tavares",
+"email":"mielna@tavares.dev.br",
+"favoriteColor":"red",
+"birthday":"24/01/1986"
+}
+
+###
+
+DELETE https://cse341-project1-14s8.onrender.com/api/v1/contacts/:id
