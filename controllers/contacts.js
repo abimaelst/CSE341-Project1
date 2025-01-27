@@ -37,8 +37,10 @@ const createContact = async (req, res) => {
 
   const response = await mongodb.getDatabase().db().collection('contacts').insertOne(contact)
 
+  res.setHeader('Content-Type', 'application/json')
+
   if (response.acknowledged) {
-    return res.status(204).send
+    return res.status(204).json({ message: 'User created' })
   }
 
   return res.status(500).json(response.error || 'Some error occourred while create the contant.')
@@ -64,9 +66,10 @@ const updateContact = async (req, res) => {
 
   const response = await mongodb.getDatabase().db().collection('contacts').replaceOne({ _id: contactId }, contact)
 
-  console.log(response.modifiedCount);
+  res.setHeader('Content-Type', 'application/json')
+
   if (response.modifiedCount > 0) {
-    res.status(204).send
+    res.status(204).json({ "message": 'User modified sucessefuly' })
     return
   }
 
@@ -79,8 +82,10 @@ const deleteContact = async (req, res) => {
 
   const response = await mongodb.getDatabase().db().collection('contacts').deleteOne({ _id: contactId })
 
+  res.setHeader('Content-Type', 'application/json')
+
   if (response.deleteCount > 0) {
-    res.status(204).send
+    res.status(204).json({ message: 'User deleted successefuly.' })
     return
   }
 
