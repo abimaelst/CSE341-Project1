@@ -8,7 +8,7 @@ GET https://cse341-project1-14s8.onrender.com/api/v1/contacts/6797bd80cd63a9e86e
 
 ###
 
-POST http://localhost:3004/api/v1/contacts
+POST https://cse341-project1-14s8.onrender.com/api/v1/contacts
 content-type: application/json
 
 {
