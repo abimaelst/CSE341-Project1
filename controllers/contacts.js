@@ -89,7 +89,7 @@ const deleteContact = async (req, res) => {
 
   res.setHeader('Content-Type', 'application/json')
 
-  if (response.deleteCount > 0) {
+  if (response.deletedCount > 0) {
     res.status(204).json({ message: 'User deleted successefuly.' })
     return
   }

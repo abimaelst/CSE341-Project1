@@ -12,7 +12,7 @@ POST https://cse341-project1-14s8.onrender.com/api/v1/contacts
 content-type: application/json
 
 {
-"firstName":"abimael",
+"firstName":"dominic",
 "lastName":"tavares",
 "email":"mielna@tavares.dev.br",
 "favoriteColor":"red",
@@ -21,12 +21,12 @@ content-type: application/json
 
 ###
 
-PUT https://cse341-project1-14s8.onrender.com/api/v1/contacts/6797b3844aca856d73bd6a5d
+PUT https://cse341-project1-14s8.onrender.com/api/v1/contacts/6797bd80cd63a9e86ea4567a
 content-type: application/json
 
 {
-"firstName":"abimael",
-"lastName":"tavares",
+"firstName":"byu",
+"lastName":"idaho",
 "email":"mielna@tavares.dev.br",
 "favoriteColor":"red",
 "birthday":"24/01/1986"
@@ -34,4 +34,4 @@ content-type: application/json
 
 ###
 
-DELETE https://cse341-project1-14s8.onrender.com/api/v1/contacts/:id
+DELETE http://localhost:3004/api/v1/contacts/6797c4448d496ab97829c273
